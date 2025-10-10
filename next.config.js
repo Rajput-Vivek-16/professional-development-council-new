@@ -16,11 +16,12 @@ const nextConfig = {
       "lh6.googleusercontent.com", // Google profile pictures
     ],
   },
+  basePath: isProd ? "/professional-development-council-new" : "",
+  assetPrefix: isProd ? "/professional-development-council-new/" : "",
   env: {
     NEXT_PUBLIC_GOOGLE_CLIENT_ID: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
   },
-  basePath: isProd ? "/professional-development-council-new" : "",
-  assetPrefix: isProd ? "/professional-development-council-new/" : "",
+  output: "export",
 };
 
 module.exports = nextConfig;
