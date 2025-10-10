@@ -18,6 +18,8 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_GOOGLE_CLIENT_ID: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
   },
+  basePath: isProd ? "/professional-development-council-new" : "",
+  assetPrefix: isProd ? "/professional-development-council-new/" : "",
 };
 
 module.exports = nextConfig;
